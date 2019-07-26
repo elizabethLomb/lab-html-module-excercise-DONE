@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,400,500,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: #424242;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/*forms*/
+input, button, input:focus, button:focus{
+    outline: none;
+}
+
+/*typo*/
+h1, .h1{ font-size: 64px;  font-weight: 400;}
+h2, .h2 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+h3, .h3{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+h5, .h5{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+
+/*grid*/
+.container{
+    width: 1200px;
+	margin: 0 auto;
+	padding: 75px 0;
+}
+
+.flex { display: flex;}
+.flex-column {flex-direction: column;}
+.flex-row { flex-direction: row; }
+
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-end {  justify-content: flex-end; }
+
+.align-center { align-items: center; }
+
+/*colors bg-----*/
+.orange{ background-color: rgb(240, 146, 51); }
+.light-blue{ background-color: rgb(32, 101, 136); }
+.dark-blue { background-color: rgb(18, 50, 68); }
+.darker-blue { background-color: rgb(38, 53, 71); }
+.btn-blue { background-color: rgb(49, 68, 88); }
+.red{ background-color: #C12127; }
+.red-btn { background-color: rgb(203, 56, 55); }
+
+/*colors txt-----*/
+.white{ color: white; }
+
+/*btn----------------*/
+.btn-rounded {
+    border-radius: 30px;
+    padding: 6px 30px;
+    font-size: 25px;
+}
+.btn-rounded:hover{
+    background-color: #C12127;
+}
+
+
+/*general*/
+a { text-decoration: none; }
+
+/*---- NAV ----*/
+.main_nav {
+    padding: 15px 40px;
+    color: rgba(255,255,255,0.8);
+}
+.main_nav a.nav_heart{ margin-right: 8px; }
+.main_nav a { color: rgba(255,255,255,0.8); }
+.main_nav a:hover { color: white; }
+.main_nav_list{ list-style-type: none; }
+.main_nav_list li{ padding: 0 10px; }
+
+/*---- HEADER ----*/
+.main_header{
+    background-image: url("../images/city-scape.svg");
+    background-size: contain;
+    background-position: center center;
+    min-height: 55vh;
+}
+.main_header .header_logo, .main_header .header_form, .main_header .header_login{ padding: 10px 40px;}
+
+.header_logo { width: 12%; }
+.header_logo img{ max-width: 100px; }
+
+.header_form { width: 72%; }
+.header_form input{
+    width: 96%;
+    border: 1px solid #446b8d;
+    height: 40px;
+    padding: 12px 6px;
+}
+.header_form button{
+    padding: 4px 10px;
+    border: 1px solid #446b8d;
+    height: 40px;
+}
+
+.header_login { width: 16%;}
+.header_login img{
+    max-width: 40px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+.header_textWrap{ max-width: 750px;}
+.header_text h1{
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.header_text p, .section_what_textWrap p{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+/*--- SECTION1------------------------------*/
+.section_orgs .col-left, .section_orgs .col-right{
+    width:50%;
+    padding: 0 20px;
+}
+.section_orgs h2{ margin-bottom: 40px;}
+.section_orgs ul{
+    list-style-position: inside;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.section_orgs ul li{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.section_orgs p{ margin-top: 20px;}
+
+/*--- SECTION2------------------------------*/
+.section_what{
+    background-image: url("../images/forklift.svg");
+    background-size: contain;
+    background-position: center center;
+    min-height: 55vh;
+}
+.section_what_textWrap{ max-width: 570px;}
+
+/*--- SECTION3------------------------------*/
+.section_block_header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section_block_header h3{ color: rgb(83, 88, 98); }
+.section_block_header p {
+    color: rgb(135, 145, 156);
+    font-size: 21px;
+}
+
+.section_block .block{
+    padding: 0 40px;
+    text-align: center;
+    max-width: 29%;
+}
+.section_block .block img{ margin-bottom: 20px;}
+.section_block h5 { font-weight: 500; }
+.section_block p{ color: rgb(135, 145, 156); }
+.section_block p a {
+    color: rgb(208, 74, 73);
+}
+.section_block p a:hover{
+    color: rgb(32, 101, 136);
+}
+
+/*--- FOOTERS------------------------------*/
+.main_footer{
+    padding: 10px 40px;
+    text-align: right;
+    background-color: #424242;
+    color: white;
+}
